@@ -15,7 +15,7 @@ function App() {
   const grid = inputArray.map((n, j) =>
     inputArray.map((n, i) => {
       const x = 184 + j * 60
-      const y = 184 + i * 60
+      const y = 184 + i * 60 + Math.random() * 10
       const width = 60
       const height = 60
       return { x, y, width, height }
@@ -26,7 +26,7 @@ function App() {
   // [0, 1, 2..., 9]
 
   return (
-    <svg width={900} height={900}>
+    <svg width={900} height={900} fill="white">
       <rect x={0} y={0} width={900} height={900} fill="none" />
       {grid.map((column, j) =>
         column.map(({ x, y, width, height }, i) => (
