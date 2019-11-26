@@ -25788,13 +25788,13 @@ function App() {
   return _react.default.createElement("svg", {
     width: 900,
     height: 900,
-    fill: "white"
+    fill: "black"
   }, _react.default.createElement("rect", {
     x: 0,
     y: 0,
     width: 900,
     height: 900,
-    fill: "none"
+    fill: "black"
   }), grid.map(function (column, j) {
     return column.map(function (_ref, i) {
       var x = _ref.x,
@@ -25802,14 +25802,14 @@ function App() {
           width = _ref.width,
           height = _ref.height;
       return _react.default.createElement("rect", {
-        transform: "rotate(".concat((Math.random() - 0.5) * i * 3, ",").concat(x, ",").concat(y, ")"),
+        transform: "rotate(".concat((Math.random() - 0.5) * i * 4, ",").concat(x, ",").concat(y, ")"),
         key: "".concat(i, "-").concat(j),
         x: x,
         y: y,
         width: width - 2,
         height: height - 2,
         fill: "none",
-        stroke: "black",
+        stroke: "white",
         strokeWidth: "3"
       });
     });
@@ -25817,7 +25817,7 @@ function App() {
 }
 
 _reactDom.default.render(_react.default.createElement(App, null), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -25845,7 +25845,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60340" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51211" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -26020,5 +26020,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/src.e31bb0bc.js.map

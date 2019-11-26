@@ -26,19 +26,19 @@ function App() {
   // [0, 1, 2..., 9]
 
   return (
-    <svg width={900} height={900} fill="white">
-      <rect x={0} y={0} width={900} height={900} fill="none" />
+    <svg width={900} height={900} fill="black">
+      <rect x={0} y={0} width={900} height={900} fill="black" />
       {grid.map((column, j) =>
         column.map(({ x, y, width, height }, i) => (
           <rect
-            transform={`rotate(${(Math.random() - 0.5) * i * 3},${x},${y})`}
+            transform={`rotate(${(Math.random() - 0.5) * i * 4},${x},${y})`}
             key={`${i}-${j}`}
             x={x}
             y={y}
             width={width - 2}
             height={height - 2}
             fill="none"
-            stroke="black"
+            stroke="white"
             strokeWidth="3"
           />
         ))
